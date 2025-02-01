@@ -29,7 +29,6 @@ h2 {
 }
 
 main {
-    scroll-snap-type: y proximity;
     height: 100vh;
     overflow-y: auto;
 }
@@ -37,7 +36,6 @@ main {
 section {
     padding-top: 20px;
     padding-bottom: 20px;
-    scroll-snap-align: start;
     min-height: 100vh;
 }
 
