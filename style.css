@@ -1,0 +1,182 @@
+:root {
+    --white: #fff8ec;
+    --blue: #1c07f6;
+    --yellow: #fcd76e;
+    --red: #f7585a;
+    --black: #000003;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+}
+
+h2 {
+    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+main {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    scroll-snap-align: start;
+    min-height: 100vh;
+}
+
+.h1-logo figure {
+    display: flex;
+    justify-content: center;
+}
+
+.h1-logo img {
+    width: 200px;
+    height: 200px;
+}
+
+.available-on-container .available-on-item {
+    font-size: 2rem;
+}
+
+
+section#podcast-spotlight {
+    height: calc(100vh - 200px);
+    min-height: fit-content;
+}
+
+#podcast-spotlight>.container>.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#podcast-spotlight .play-img-container {
+    position: relative;
+}
+
+#podcast-spotlight .play-img-container img {
+    width: 20%;
+}
+
+#podcast-spotlight .play-img-container i {
+    font-size: 6rem;
+    color: var(--blue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#spotify-embed {
+    width: 100%;
+    height: 320px;
+    margin-bottom: -50px;
+}
+
+/* #podcast-logo {    width: 100px;    height: 100px;} */
+#podcast-logo img {
+    width: 100%;
+}
+
+.spotify-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    #podcast-spotlight h2 {
+        font-size: 54px;
+    }
+}
+
+@media (min-width: 992px) {
+    #podcast-spotlight h2 {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #podcast-spotlight h2 {
+        font-size: 80px;
+    }
+}
+
+/* # Projects section */
+
+section#projects-spotlight {
+    background-color: var(--yellow);
+}
+
+#projects-spotlight .card-rubrica {
+    background-color: var(--white);
+    border: none;
+    border: var(--black) 2px solid;
+}
+
+#projects-spotlight .card-rubrica img {
+    width: 100%;
+    border: var(--black) 2px solid;
+}
+
+@media (min-width: 1200px) {
+    #projects-spotlight .card-rubrica {
+        max-width: 500px;
+    }
+}
+
+/* # Team section */
+section#team-spotlight {
+    background-color: var(--white);
+}
+
+#team-spotlight .card-rubrica {
+    background-color: var(--white);
+    text-align: center;
+    /* border: var(--black) 2px solid; */
+}
+
+#team-spotlight .card-rubrica img {
+    width: 100%;
+    border: var(--black) 2px solid;
+}
+
+#team-spotlight .card-rubrica h3 {
+    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#team-spotlight .card-rubrica h4 {
+    /* font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; */
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #444547;
+}
+
+@media (max-width: 768px) {
+    #team-spotlight .card-rubrica h3 {
+        font-size: 2.5em;
+    }
+
+    #team-spotlight .card-rubrica h4 {
+        font-size: 2em;
+    }
+}
